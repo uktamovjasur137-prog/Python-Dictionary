@@ -1,12 +1,11 @@
-def merge_dicts(a: dict, b: dict) -> dict:
-    if a == b:
-        return b
+def sum_until_n(n):
+    total = 0
+    i = 1
     
-    a.update(b)
-    return a
+    while i <= n:
+        total += i
+        i += 1
+    
+    return total
 
-a = {"name": "Alice", "age": 30}
-b = {"name": "Alice", "age": 30}
-
-result = merge_dicts(a, b)
-print(result)
+print(sum_until_n(5))
